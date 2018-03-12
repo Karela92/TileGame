@@ -1,0 +1,30 @@
+@import 'smart-grid'
+@import 'fonts'
+@import 'vars'
+@import 'libs'
+
++reset()
+
+body
+  font-family: $default-font
+  background-color: #ffffff
+
+.main
+	+wrapper()
+	max-width: 1920px
+
+ul
+	width: 820px
+	margin: 20px auto
+	li
+		display: inline-block
+		border: 1px solid black
+		height: 200px
+		width: 200px
+		cursor: pointer
+		background-color: grey
+		
+	
+@import 'media'
+		
+  
