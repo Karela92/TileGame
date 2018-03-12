@@ -21,9 +21,11 @@ for(let i = 0;i < li.length;i++) {
 		}
 		countColor++
 		arr.push(this)
+		console.log(arr)
 		if(arr[0].style.backgroundColor == arr[1].style.backgroundColor) {
 		arrWin.push(arr[0])
 		arrWin.push(arr[1])
+
 		arr = []
 		} else if (arr[0] != arr[1]) {
 			setTimeout((function(){
@@ -38,6 +40,7 @@ for(let i = 0;i < li.length;i++) {
 		if(arrWin.length == 16) {
 				setTimeout((function() {
 					alert('Вы Выиграли!')
+					arrWin = []
 				}),700 )
 		}
 	}
@@ -60,7 +63,7 @@ function resetGame() {
 	for(let i = 0;i < li.length;i++) {
 		li[i].addEventListener('click',func)
 		li[i].style.backgroundColor = 'grey'
-	}	
+	}
 }
 
 
