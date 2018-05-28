@@ -62,6 +62,3 @@ function resetGame() {
 		li[i].style.backgroundColor = 'grey';
 	}
 }
-
-
-
